@@ -1,0 +1,67 @@
+*{
+    display: block;
+    margin: 0 auto;
+    text-align: center;  
+}
+body{
+    background-color: antiquewhite;
+}
+.text_box img {
+    max-width: 100%;
+    
+}
+.mother_1{
+    margin-top: 30px;
+    width: 80%;
+    height: 400px;
+    background-color: rgb(236, 248, 248);
+    display: flex;
+    border-radius: 20px;
+}
+.mother_1 .child{
+    margin-top: 20px;
+    width: 30%;
+}
+.small1{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.small1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.box_wraper{
+    width: 50%;
+    height: 200px;
+    background-color: coral;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    transition: all 0.8s;
+}
+.tor{
+    width: 100px;
+    height: 100px;
+    background-color: darkgoldenrod;
+    transform: skew(-30deg);
+    animation: skew 3s infinite;
+}
+@keyframes skew {
+    0% {
+        transform: skewX(20deg);
+    }
+    
+    50%{
+        transform: skewX(-20deg);
+    }
+    00%{
+        transform: skewX(20deg);
+    }
+}
+.box_wraper:hover{
+    width: 100%;
+}
